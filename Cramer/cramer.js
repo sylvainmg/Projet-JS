@@ -196,7 +196,7 @@ $(document).ready(function(){
             let x = fraction(Dx[0], Dx[1], D[0], D[1]), y = fraction(Dy[0], Dy[1], D[0], D[1]), z = fraction(Dz[0], Dz[1], D[0], D[1]);
             results.removeClass("bg-danger");
             results.addClass("bg-success");
-            results.html("\\(x\\) = " + x[0] + "\\(+\\)" + x[1] + "i" + "<br>\\(y\\) = " + y[0] + "\\(+\\)" + y[1] + "i" + "<br>\\(z\\) = " + z[0] + "\\(+\\)" + z[1] + "i");
+            results.html("\\(x = " + x[0] + "+" + x[1] + "i\\)" + "<br>\\(y = " + y[0] + "+" + y[1] + "i\\)" + "<br>\\(z = " + z[0] + "+" + z[1] + "i\\)");
             rapport.html("\\(\\Delta = " + D[0] + "+" + D[1] + "i\\), \\(\\Delta_x = " + Dx[0] + "+" + Dx[1] + "i, \\Delta_y = " + Dy[0] + "+" + Dy[1] + "i\\) et \\(\\Delta_z = " + Dz[0] + "+" + Dz[1] + "i.\\) D'où l'existence de solutions.");
             MathJax.typeset();
         }
