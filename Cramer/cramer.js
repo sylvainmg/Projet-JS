@@ -133,6 +133,8 @@ $(document).ready(function(){
         e.preventDefault(); //Empêche le rechargement de la page
         //Inputs
 
+        results.text(""); //Réinitialisation du bloc de résultats
+
         var Re_a1 = parseFloat($("#Re-a1").val());
         var Im_a1 = parseFloat($("#Im-a1").val());
         var Re_b1 = parseFloat($("#Re-b1").val());
@@ -197,20 +199,26 @@ $(document).ready(function(){
             results.removeClass("bg-danger");
             results.addClass("bg-success");
 
-            if (x[1] >= 0)
+            if (x[1] >= 0) {
                 results.append("\\(x = " + x[0] + "+" + x[1] + "i\\)<br>");
-            else
+            }
+            else {
                 results.append("\\(x = " + x[0] + "" + x[1] + "i\\)<br>");
+            }
 
-            if (y[1] >= 0)
+            if (y[1] >= 0) {
                 results.append("\\(y = " + y[0] + "+" + y[1] + "i\\)<br>");
-            else
+            }
+            else {
                 results.append("\\(y = " + y[0] + "" + y[1] + "i\\)<br>");
+            }
 
-            if (z[1] >= 0)
+            if (z[1] >= 0) {
                 results.append("\\(z = " + z[0] + "+" + z[1] + "i\\)<br>");
-            else
+            }
+            else {
                 results.append("\\(z = " + z[0] + "" + z[1] + "i\\)<br>");
+            }
 
             rapport.html("\\(\\Delta = " + D[0] + "+" + D[1] + "i\\), \\(\\Delta_x = " + Dx[0] + "+" + Dx[1] + "i, \\Delta_y = " + Dy[0] + "+" + Dy[1] + "i\\) et \\(\\Delta_z = " + Dz[0] + "+" + Dz[1] + "i.\\) D'où l'existence de solutions.");
             MathJax.typeset();
