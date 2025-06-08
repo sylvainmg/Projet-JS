@@ -134,6 +134,7 @@ $(document).ready(function(){
         //Inputs
 
         results.text(""); //Réinitialisation du bloc de résultats
+        rapport.text(""); //Réinitialisation du bloc de rapport
 
         var Re_a1 = parseFloat($("#Re-a1").val());
         var Im_a1 = parseFloat($("#Im-a1").val());
@@ -220,7 +221,15 @@ $(document).ready(function(){
                 results.append("\\(z = " + z[0] + "" + z[1] + "i\\)<br>");
             }
 
-            rapport.html("\\(\\Delta = " + D[0] + "+" + D[1] + "i\\), \\(\\Delta_x = " + Dx[0] + "+" + Dx[1] + "i, \\Delta_y = " + Dy[0] + "+" + Dy[1] + "i\\) et \\(\\Delta_z = " + Dz[0] + "+" + Dz[1] + "i.\\) D'où l'existence de solutions.");
+            if (x[1] >= 0) rapport.append("\\(\\Delta_x = " + x[0] + "+" + x[1] + "i, \\)");
+            else rapport.append("\\(\\Delta_x = " + x[0] + "" + x[1] + "i, \\)");
+
+            if (y[1] >= 0) rapport.append("\\(\\Delta_y = " + y[0] + "+" + y[1] + "i, \\)");
+            else rapport.append("\\( \\Delta_y = " + y[0] + "" + y[1] + "i, \\)");
+
+            if (z[1] >= 0) rapport.append("\\(\\Delta_z = " + z[0] + "+" + z[1] + "i, \\) D'où l'existence de solutions.");
+            else rapport.append("\\( \\Delta_z = " + z[0] + "" + z[1] + "i, \\) D'où l'existence de solutions.");
+
             MathJax.typeset();
         }
     });
