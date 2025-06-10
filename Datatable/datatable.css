@@ -32,3 +32,16 @@
 #tableau {
     border: 4px solid grey;
 }
+
+#canvas {
+    width: 100%; 
+    height: 200px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+#graphe {
+    width: 100%;
+    height: 100%;
+}
