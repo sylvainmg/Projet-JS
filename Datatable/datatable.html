@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html lang="fr"> 
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Système d'équations</title>
+        <!--Bootstrap-->
+        <link href="datatable.css" rel="stylesheet">
+        <link href="../bootstrap.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+            <!--Barre de navigation-->
+            <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <div>
+                <nav class="navbar navbar-expand-lg bg-secondary bg-opacity-25">                   
+                    <div class="container">
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                            <span class="navbar-toggler-icon" data-bs-toggle="collapse" data-bs-target="#menu"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="menu">
+                            <ul class="navbar-nav">
+                                <li class="nav-item item"><a href="../index.html" class="nav-link">Accueil</a></li>
+                                <li class="nav-item item"><a href="../Cramer/cramer.html" class="nav-link">Système d'équations</a></li>
+                                <li class="nav-item item"><a href="../Image/image.html" class="nav-link">Image</a></li>
+                                <li class="nav-item item"><a href="../Panneau/panneau.html" class="nav-link">Panneau publicitaire</a></li>
+                            </ul>
+                        </div>
+                    </div>           
+                </nav>
+            </div>
+            <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+            <!--Contenu de la page-->
+            <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <div class="container-fluid text-center p-5">
+                <div class="bg-primary bg-opacity-75 text-white border rounded display-1 fw-bold p-4 shadow">Datatable</div>
+                <br><br>
+
+                <form>
+                    <table id="tableau" class="table table-striped table-bordered container text-center">
+                        <thead class="p-5 fw-bold">
+                            <tr>
+                                <th>Désignation</th>
+                                <th>Quantité</th>
+                                <th>Prix</th>
+                                <th>Montant</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td><input type="text" id="t1" name="t1"></td> <!--Désigation-->
+                                <td><input type="number" min="0" id="q1" name="q1"></td> <!--Quantité-->
+                                <td><input type="number" min="0" id="p1" name="p1"> Ar</td> <!--Prix-->
+                                <td><input type="number" min="0" id="m1" name="m1" readonly> Ar</td> <!--Montant-->
+                            </tr>
+
+                            <tr>
+                                <td><input type="text" id="t2" name="t2"></td> <!--Désigation-->
+                                <td><input type="number" min="0" id="q2" name="q2"></td> <!--Quantité-->
+                                <td><input type="number" min="0" id="p2" name="p2"> Ar</td> <!--Prix-->
+                                <td><input type="number" min="0" id="m2" name="m2" readonly> Ar</td> <!--Montant-->
+                            </tr>
+
+                                <tr>
+                                <td><input type="text" id="t3" name="t3"></td> <!--Désigation-->
+                                <td><input type="number" min="0" id="q3" name="q3"></td> <!--Quantité-->
+                                <td><input type="number" min="0" id="p3" name="p3"> Ar</td> <!--Prix-->
+                                <td><input type="number" min="0" id="m3" name="m3" readonly> Ar</td> <!--Montant-->
+                            </tr>
+
+                            <tr>
+                                <td><input type="text" id="t4" name="t4"></td> <!--Désigation-->
+                                <td><input type="number" min="0" id="q4" name="q4"></td> <!--Quantité-->
+                                <td><input type="number" min="0" id="p4" name="p4"> Ar</td> <!--Prix-->
+                                <td><input type="number" min="0" id="m4" name="m4" readonly> Ar</td> <!--Montant-->
+                            </tr>
+
+                            <tr>
+                                <td><input type="text" id="t5" name="t5"></td> <!--Désigation-->
+                                <td><input type="number" min="0" id="q5" name="q5"></td> <!--Quantité-->
+                                <td><input type="number" min="0" id="p5" name="p5"> Ar</td> <!--Prix-->
+                                <td><input type="number" min="0" id="m5" name="m5" readonly> Ar</td> <!--Montant-->
+                            </tr>
+                            
+                                <tr>
+                                <td><input type="text" id="t6" name="t6"></td> <!--Désigation-->
+                                <td><input type="number" min="0" id="q6" name="q6"></td> <!--Quantité-->
+                                <td><input type="number" min="0" id="p6" name="p6"> Ar</td> <!--Prix-->
+                                <td><input type="number" min="0" id="m6" name="m6" readonly> Ar</td> <!--Montant-->
+                            </tr>
+
+                            <tr>
+                                <td><input type="text" id="t7" name="t7"></td> <!--Désigation-->
+                                <td><input type="number" min="0" id="q7" name="q7"></td> <!--Quantité-->
+                                <td><input type="number" min="0" id="p7" name="p7"> Ar</td> <!--Prix-->
+                                <td><input type="number" min="0" id="m7" name="m7" readonly> Ar</td> <!--Montant-->
+                            </tr>
+
+                            <tr>
+                                <td><input type="text" id="t8" name="t8"></td> <!--Désigation-->
+                                <td><input type="number" min="0" id="q8" name="q8"></td> <!--Quantité-->
+                                <td><input type="number" min="0" id="p8" name="p8"> Ar</td> <!--Prix-->
+                                <td><input type="number" min="0" id="m8" name="m8" readonly> Ar</td> <!--Montant-->
+                            </tr>
+                                
+                            <tr>
+                                <td><input type="text" id="t9" name="t9"></td> <!--Désigation-->
+                                <td><input type="number" min="0" id="q9" name="q9"></td> <!--Quantité-->
+                                <td><input type="number" min="0" id="p9" name="p9"> Ar</td> <!--Prix-->
+                                <td><input type="number" min="0" id="m9" name="m9" readonly> Ar</td> <!--Montant-->
+                            </tr>
+
+                            <tr>
+                                <td><input type="text" id="t10" name="t10"></td> <!--Désigation-->
+                                <td><input type="number" min="0" id="q10" name="q10"></td> <!--Quantité-->
+                                <td><input type="number" min="0" id="p10" name="p10"> Ar</td> <!--Prix-->
+                                <td><input type="number" min="0" id="m10" name="m10" readonly> Ar</td> <!--Montant-->
+                            </tr>
+
+                            <tr>                      
+                                <td colspan="4"><button type="submit" id="confirmer" class="btn btn-primary px-4">Valider les changements</button></td>
+                            </tr>
+                        
+
+                            <tr>
+                                <td colspan="2">
+                                    <br>
+
+                                    <label for="prix-moyen" class="col-sm-4 col-form-label text-start">Prix moyen : &nbsp;&nbsp;</label>
+                                        <input type="text" id="prix-moyen" name="prix-moyen" class="output" readonly> Ar
+
+                                        <br>
+                                        <br>
+
+                                        <label for="prix-minimal" class="col-sm-4 col-form-label text-start">Prix minimal : &nbsp;&nbsp;</label>
+                                        <input type="text" id="prix-minimal" name="prix-minimal" class="output" readonly> Ar
+
+                                        <br>
+                                        <br>
+
+                                        <label for="prix-maximal" class="col-sm-4 col-form-label text-start">Prix maximal : &nbsp;&nbsp;</label>
+                                        <input type="text" id="prix-maximal" name="prix-maximal" class="output" readonly> Ar
+
+                                        <br>
+                                        <br>
+                                    </td>
+
+                                    <td colspan="2">
+                                        <div id="canvas"><canvas id="graphe"></canvas></div>
+                                    </td>
+                            </tr>
+                        </tbody>
+
+                        <tfoot>
+                            <tr>
+                                <th colspan="4">
+                                    <label for="quantite-totale" class="col-sm-4 col-form-label text-start">Quantité totale : &nbsp;&nbsp;</label>
+                                    <input type="text" id="quantite-totale" name="quantite-totale" class="output" readonly> Ar
+
+                                    <br>
+                                    <br>
+
+                                    <label for="montant-total" class="col-sm-4 col-form-label text-start">Montant total : &nbsp;&nbsp;</label>
+                                    <input type="text" id="montant-total" name="montant-total" class="output" readonly> Ar
+
+                                    <br>
+                                    <br>
+                                </th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                 </form>
+
+            </div>
+
+            <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+            <!--Footer-->
+            <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <div>
+                <footer class="text-center m-0 p-0">
+                    <h1 class="display-4 bg-primary bg-opacity-25 p-2">Auteurs du site</h1>
+                    <ul class="list-unstyled p-2">
+                            <li>RASOLOFONIAINA Mintsa Sylvain</li>
+                            <li>RANDRIANANTENAINA Christinah Fabienne</li>
+                            <li>TSARAMONINA Daniela Joséphine</li>
+                            <li>NY AINA RAVELOSON Fanilo</li>
+                    </ul>
+                </footer>
+            </div>
+            <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+            <!--Scripts-->
+            <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+            <script src="../bootstrap.bundle.min.js"></script>
+            <script src="../jquery-3.7.1.js"></script>
+            <script src="datatable.js"></script>
+            <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        </div>
+    </body>
+</html>

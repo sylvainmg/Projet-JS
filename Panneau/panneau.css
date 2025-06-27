@@ -1,0 +1,64 @@
+@media (min-width: 992px){
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 250px;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: column !important;
+        width: 100%;
+    }
+
+    .navbar-toggler {
+        display: none;
+    }
+
+    body {
+        margin-left: 250px;
+    }
+}
+
+/*************************************************************************************************************************/
+
+
+
+/* presentation de la publicite */
+.panneau {
+  perspective: 1000px;
+  width: 100%;
+  height: 640px;
+  position: relative;
+  overflow: hidden;
+}
+
+.pub {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* backface-visibility: hidden; */
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  opacity: 0;
+  
+}
+
+.pub.active {
+  opacity: 1;
+  transform: rotateY(0deg);
+  z-index: 1;
+  
+}

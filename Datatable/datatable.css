@@ -1,0 +1,47 @@
+@media (min-width: 992px){
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: column !important;
+        width: 100%;
+    }
+
+    .navbar-toggler {
+        display: none;
+    }
+
+    body {
+        margin-left: 250px;
+    }
+}
+
+/*************************************************************************************************************************/ 
+
+.output {
+    background-color: #cccccc;
+}
+
+#tableau {
+    border: 4px solid grey;
+}
+
+#canvas {
+    width: 100%; 
+    height: 200px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+#graphe {
+    width: 100%;
+    height: 100%;
+}
