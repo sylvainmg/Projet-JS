@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Redimension d'image</title>
+  <link rel="stylesheet" href="../globals.css">
   <link rel="stylesheet" href="../bootstrap.min.css">
   <link rel="stylesheet" href="image.css">
 </head>
@@ -11,7 +12,7 @@
   <!--Barre de navigation-->
   <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
   <div>
-      <nav class="navbar navbar-expand-lg bg-secondary bg-opacity-25">                   
+      <nav class="navbar navbar-expand-lg bg-secondary bg-opacity-50">                   
           <div class="container-fluid">
 
               <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
@@ -20,10 +21,10 @@
 
               <div class="collapse navbar-collapse" id="menu">
                   <ul class="navbar-nav">
-                      <li class="nav-item item"><a href="../index.html" class="nav-link">Accueil</a></li>
-                      <li class="nav-item item"><a href="../Cramer/cramer.html" class="nav-link">Système d'équations</a></li>
-                      <li class="nav-item item"><a href="../Panneau/panneau.html" class="nav-link">Panneau publicitaire</a></li>
-                      <li class="nav-item item"><a href="../Datatable/datatable.html" class="nav-link">Datatable</a></li>
+                      <li class="nav-item item"><a href="../index.html" class="nav-link text-dark fw-bold">Accueil</a></li>
+                      <li class="nav-item item"><a href="../Cramer/cramer.html" class="nav-link text-dark fw-bold">Système d'équations</a></li>
+                      <li class="nav-item item"><a href="../Panneau/panneau.html" class="nav-link text-dark fw-bold">Panneau publicitaire</a></li>
+                      <li class="nav-item item"><a href="../Datatable/datatable.html" class="nav-link text-dark fw-bold">Datatable</a></li>
                   </ul>
               </div>
           </div>           
@@ -31,8 +32,8 @@
   </div>
   <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
-  <div class="container text-center p-5">
-    <div class="bg-primary bg-opacity-75 text-white border rounded display-1 fw-bold p-4 shadow">Image</div>
+  <div class="container-fluid text-center p-5">
+    <div class="bg-info bg-opacity-50 text-white border rounded display-4 fw-bold p-4 shadow">Image</div>
     <br><br>
 
     <div class="container">   <!--contenu du code -->
@@ -41,12 +42,12 @@
     
           <div class="slider-group">
             <label for="largeur" > Largeur : <span id="spanLarg" class="value">300</span>px</label>
-            <input class="form-range" type="range" id="largeur" value="300" min="50" max="800">
+            <input class="form-range" type="range" id="largeur" value="300" min="50" max="1200">
           </div>  
     
         <div class="slider-group">
            <label for="longueur ">Longueur : <span id="spanLong" class="Longueur">200</span>px</label>
-            <input class="form-range" type="range" value="200" min="10" max="700" id="longueur">
+            <input class="form-range" type="range" value="200" min="10" max="1000" id="longueur">
         </div>
     
       </div>
@@ -68,9 +69,10 @@
   </div>
   <!--Footer-->
             <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <div class="pt-4"></div>
             <div style="margin-top: 200px">
                 <footer class="text-center m-0 p-0">
-                    <h1 class="display-4 bg-primary bg-opacity-25 p-2">Auteurs du site</h1>
+                    <h1 class="display-6 bg-info text-white fw-bold bg-opacity-50 p-2">Auteurs du site</h1>
                     <ul class="list-unstyled p-2">
                             <li>RASOLOFONIAINA Mintsa Sylvain</li>
                             <li>RANDRIANANTENAINA Christinah Fabienne</li>
