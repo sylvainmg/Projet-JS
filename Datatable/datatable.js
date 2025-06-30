@@ -3,7 +3,7 @@ $(document).ready(function(){
     /**************************************************************************************************************************************************************/
     $(".item").hover(function(){
         $(this).css({
-                "transform": "scale(1.01)",
+                "transform": "scale(1.001)",
                 "transition": "transform 0.3s ease"
             });
         },
@@ -17,8 +17,7 @@ $(document).ready(function(){
 
     //Modification dynamique
 
-    $("#confirmer").on("click", function(e) {
-        e.preventDefault(); //Empêche le rechargement de la page
+    $("input").on("change", function() {
 
         let total = [];
         let somme = 0;
@@ -78,8 +77,7 @@ $(document).ready(function(){
     //Graphique dynamique
     let graphe;
 
-    $("#confirmer").on("click", function(e) {
-        e.preventDefault();
+    $("input").on("change", function() {
 
         let ctx = $("#graphe");
         let minimal = $("#prix-minimal").val(), maximal = $("#prix-maximal").val(), moyen = $("#prix-moyen").val();
