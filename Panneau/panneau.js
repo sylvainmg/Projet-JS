@@ -33,7 +33,7 @@ function changerPub() {
   index = (index + 1) % pubs.length;
 }
 
-// Démarrer la rotation toutes les 3 secondes
+// Démarrer la rotation toutes les 4 secondes
 changerPub(); // Première pub
 setInterval(changerPub, 4000);
 });
